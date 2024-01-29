@@ -7,7 +7,7 @@ import {
   signInWithEmailAndPassword,
   updateProfile
 } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 
@@ -17,7 +17,7 @@ const Login = () => {
 
   const dispatch = useDispatch()
 
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   const [errMsg, setErrMsg] = useState(null);
 
@@ -50,19 +50,19 @@ const Login = () => {
             const {uid,email,displayName} = auth.currentUser;
             dispatch(addUser({uid:uid,email:email,displayName:displayName}))
       
-            navigate('/browse')
+            
           }).catch((error) => {
             // An error occurred
             // ...
           });
           
-          console.log(user);
+          //console.log(user);
           // ...
         })
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
-          console.log(errorCode + ":" + errorMessage);
+          //console.log(errorCode + ":" + errorMessage);
           // ..
         });
     } else {
@@ -74,14 +74,14 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          navigate("/browse");
-          console.log(user);
+          
+          //console.log(user);
           // ...
         })
         .catch((error) => {
-          const errorCode = error.code;
+          //const errorCode = error.code;
           const errorMessage = error.message;
-          console.log(errorCode + ":" + errorMessage);
+          //console.log(errorMessage);
         });
     }
   };
