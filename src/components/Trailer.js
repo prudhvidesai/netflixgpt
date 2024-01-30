@@ -7,7 +7,7 @@ const Trailer = () => {
    
   const trail = useSelector(store=>store.movies.trailer)  
   if(!trail) return
-  console.log(trail.key);
+  //console.log(trail.key);
  
   return (
     <div>

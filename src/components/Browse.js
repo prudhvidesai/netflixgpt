@@ -4,6 +4,7 @@ import useNowplayingMovies from "../hooks/useNowplayingMovies";
 import { useSelector } from "react-redux";
 import VideoText from "./VideoText";
 import MainCont from "./MainCont";
+import CardsCont from "./CardsCont";
 
 const Browse = () => {
   useNowplayingMovies();
@@ -17,6 +18,10 @@ const Browse = () => {
       <Header />
 
       <MainCont/>
+      <div>
+      <CardsCont/>
+      </div>
+      
     </div>
   );
 };

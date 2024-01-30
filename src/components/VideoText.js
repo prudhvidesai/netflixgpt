@@ -5,7 +5,7 @@ const VideoText = (props) => {
     const{title,desc}=props
   return (   
     
-    <div className='pt-[400px] py-2 px-24 absolute text-white bg-gradient-to-r from-black-300 aspect-video w-30' >
+    <div className='pt-[350px]  px-24 absolute text-white bg-gradient-to-r from-black-300 aspect-video w-30' >
     <h1 className='font-bold text-4xl'>{title}</h1>
       <p className='w-[700px]'>{desc}</p>
       <div className='mt-3'>
