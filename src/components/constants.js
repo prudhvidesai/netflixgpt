@@ -6,4 +6,21 @@ export const API_OPTIONS= {
     }
   };
 
-export const movieCardUrl="https://image.tmdb.org/t/p/w400/"  
+export const movieCardUrl="https://image.tmdb.org/t/p/w300/"  
+
+
+export const languageOptions = [
+  {
+    identifier:"English",
+    name:"English",
+  },
+  {
+    identifier:"Hindi",
+    name:"Hindi",
+  },
+  {
+    identifier:"Espaniol",
+    name:"Espaniol",
+  },
+ 
+]
