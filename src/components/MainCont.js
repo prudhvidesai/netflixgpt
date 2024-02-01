@@ -9,8 +9,8 @@ const MainCont = () => {
   const movie = useSelector(store=>store.movies.nowPlayingMovies)
   //console.log(movie);
   return (
-    <div>
-      <VideoText title={movie[0].title} desc={movie[0].overview}/>
+    <div className="">
+      {/* <VideoText title={movie[0].title} desc={movie[0].overview}/> */}
       <Trailer />
     </div>
   );
