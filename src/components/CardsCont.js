@@ -23,7 +23,7 @@ const CardsCont = () => {
     if(!upmovies) return
     //console.log(topmovies);
   return (
-    <div className='bg-black mt-20 md:mt-0'>
+    <div className='bg-black mt-[60px] md:mt-0'>
       <MovieList title={"Now Playing"} list={movies}/>
       <MovieList title={"Popular"} list={pmovies}/>
       <MovieList title={"Top Rated Movies"} list={topmovies}/>

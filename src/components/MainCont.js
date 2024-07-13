@@ -10,7 +10,7 @@ const MainCont = () => {
   //console.log(movie);
   return (
     <div className="">
-      {/* <VideoText title={movie[0].title} desc={movie[0].overview}/> */}
+      <VideoText title={movie[0].title} desc={movie[0].overview}/>
       <Trailer />
     </div>
   );
